@@ -24,6 +24,8 @@ gfortran -c utilities.f90
 gfortran utilities.o MD.f90 -o MD
 ./MD
 ```
-3. The results will be generated in the current folder
+3. Two outputs will be generated:
+   - `md.xyz`: a file that contain the coordinates of the system at every step (trajectory). 
+   - `energy.dat`: a file that contain energies data of the system. 
 
 
