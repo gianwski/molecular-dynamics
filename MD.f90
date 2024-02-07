@@ -1,3 +1,28 @@
+! Author: Gianluca Regni
+! Copyright (c) 2024 Gianluca Regni
+! License: GPL-3.0 (https://www.gnu.org/licenses/)
+! Credits: Please cite the author if you use or reference this program.
+!
+! Description: 
+! This is a molecular dynamics program developed to simulate atom particles in a gas phase. Verlet integration
+! (Velocity Verlet) was employed to numerically integrate the Newton’s equation of motion, allowing for
+! the calculation of particle trajectories. The interaction between gas particles was simulated
+! through a Lennard-Jones potential, where every atom experience a cumulative Lennard-Jones force generated
+! by other particles.
+! MD.f90 serves as the main program, while utilities.f90 comprises a set of subroutines. Ensure that they are
+! located in the same folder before compilation.
+!
+! Run:
+! 1. Create an input file named "input" with a structure similar to the provided samples in the input_files
+!    folder (https://github.com/gianwski/molecular-dynamics/tree/main).
+! 2. Compile and run the program using the following commands:
+!    gfortran -c utilities.f90
+!    gfortran utilities.o MD.f90 -o MD
+!    ./MD
+! 3. Two outputs will be generated:
+!    - "md.xyz": a file that contain the coordinates of the system at every step (trajectory). 
+!    - "energy.dat": a file that contain energies data of the system. 
+
   program md
 
   use utilities
