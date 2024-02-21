@@ -28,4 +28,11 @@ gfortran utilities.o MD.f90 -o MD
    - `md.xyz`: a file that contain the coordinates of the system at every step (trajectory). 
    - `energy.dat`: a file that contain energies data of the system. 
 
+## License
+
+Distributed under the GPL-3.0 License. See `LICENSE` for more information
+
+## Contact
+
+Gianluca Regni - [gianluca.regni@studenti.unipg.it](mailto:gianluca.regni@studenti.unipg.it)
 
